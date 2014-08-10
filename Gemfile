@@ -29,6 +29,10 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'awesome_print', '~> 1.2.0'
 
+gem 'bootstrap-sass', '~> 3.2.0.1'
+
+gem 'haml-rails', '~> 0.5.3'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -37,6 +41,7 @@ end
 group :development, :integration, :test do
   gem 'rspec-rails', '~> 3.0.2'
   gem 'shoulda-matchers', require: false
+  gem 'faker', '~> 1.4.2'
 end
 
 # Use ActiveModel has_secure_password

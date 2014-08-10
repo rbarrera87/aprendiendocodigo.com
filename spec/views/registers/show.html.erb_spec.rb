@@ -4,8 +4,8 @@ RSpec.describe "registers/show", :type => :view do
   before(:each) do
     @register = assign(:register, Register.create!(
       :name => "Name",
-      :email => "Email",
-      :cell_phone => "Cell Phone"
+      :email => Faker::Internet.email,
+      :cell_phone => "4152725835"
     ))
   end
 
@@ -13,6 +13,6 @@ RSpec.describe "registers/show", :type => :view do
     render
     expect(rendered).to match(/Name/)
     expect(rendered).to match(/Email/)
-    expect(rendered).to match(/Cell Phone/)
+    expect(rendered).to match(/4152725835/)
   end
 end

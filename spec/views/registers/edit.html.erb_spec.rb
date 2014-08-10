@@ -4,8 +4,8 @@ RSpec.describe "registers/edit", :type => :view do
   before(:each) do
     @register = assign(:register, Register.create!(
       :name => "MyString",
-      :email => "MyString",
-      :cell_phone => "MyString"
+      :email => Faker::Internet.email,
+      :cell_phone => "4152725835"
     ))
   end
 

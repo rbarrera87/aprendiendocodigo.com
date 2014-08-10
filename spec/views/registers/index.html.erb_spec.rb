@@ -2,16 +2,17 @@ require 'rails_helper'
 
 RSpec.describe "registers/index", :type => :view do
   before(:each) do
+    @email = Faker::Internet.email
     assign(:registers, [
       Register.create!(
         :name => "Name",
-        :email => "Email",
-        :cell_phone => "Cell Phone"
+        :email => @email,
+        :cell_phone => "4152725835"
       ),
       Register.create!(
         :name => "Name",
-        :email => "Email",
-        :cell_phone => "Cell Phone"
+        :email => Faker::Internet.email,
+        :cell_phone => "4152725835"
       )
     ])
   end
@@ -19,7 +20,7 @@ RSpec.describe "registers/index", :type => :view do
   it "renders a list of registers" do
     render
     assert_select "tr>td", :text => "Name".to_s, :count => 2
-    assert_select "tr>td", :text => "Email".to_s, :count => 2
-    assert_select "tr>td", :text => "Cell Phone".to_s, :count => 2
+    assert_select "tr>td", :text => @email, :count => 1
+    assert_select "tr>td", :text => "4152725835".to_s, :count => 2
   end
 end
