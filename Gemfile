@@ -43,6 +43,9 @@ group :development, :integration, :test do
   gem 'shoulda-matchers', require: false
   gem 'faker', '~> 1.4.2'
 end
+group :production do
+  gem 'pg'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
