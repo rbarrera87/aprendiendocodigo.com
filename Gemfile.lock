@@ -27,6 +27,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     awesome_print (1.2.0)
+    bcrypt (3.1.9)
     bootstrap-sass (3.2.0.1)
       sass (~> 3.2)
     builder (3.1.4)
@@ -37,6 +38,13 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.1)
+    devise (3.4.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
@@ -65,6 +73,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.10.1)
     mysql2 (0.3.16)
+    orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -91,6 +100,8 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    responders (1.1.2)
+      railties (>= 3.2, < 4.2)
     rspec-core (3.0.3)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.3)
@@ -139,6 +150,8 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -147,6 +160,7 @@ DEPENDENCIES
   awesome_print (~> 1.2.0)
   bootstrap-sass (~> 3.2.0.1)
   coffee-rails (~> 4.0.0)
+  devise (~> 3.4.1)
   faker (~> 1.4.2)
   haml-rails (~> 0.5.3)
   jbuilder (~> 1.2)

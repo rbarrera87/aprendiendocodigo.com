@@ -16,3 +16,5 @@
 /tmp
 config/*.yml
 .rspec
+.rvmrc
+
