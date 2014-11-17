@@ -1,7 +1,7 @@
 html, body {min-height:100%; background:#5A5B5D; margin: 0; padding: 0;}
 
 #main{background:#F4F4F4; margin:0 auto; text-align: center; border-bottom:1px solid #fff;}
-#main img{max-width:95%; margin: 0 auto; display: block; padding: 20px 0;}
+#main img{max-width:100%; margin: 0 auto; display: block; padding: 25px 10px;}
 #main_bottom{background:#5A5B5D repeat; padding: 40px 20px; margin: 0 auto; text-align: center;}
 #main_bottom p{color: #fff; font-size: 14px; line-height:24px; max-width: 840px; margin: 0 auto; padding:15px 0;}
 #main_bottom h2{color: #fff; font-size: 30px; text-transform: uppercase; line-height: 36px;}
