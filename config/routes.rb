@@ -1,6 +1,7 @@
 AprendiendocodigoCom::Application.routes.draw do
   root "welcome#index"
   get "welcome/index"
+  get "welcome/under_construction"
   resources :registers
 
   # The priority is based upon order of creation: first created -> highest priority.
