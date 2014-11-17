@@ -1,4 +1,4 @@
-html,body {height:100%; background:#5A5B5D;}
+html, body {min-height:100%; background:#5A5B5D; margin: 0; padding: 0;}
 
 #main{background:#F4F4F4; margin:0 auto; text-align: center; border-bottom:1px solid #fff;}
 #main img{max-width:95%; margin: 0 auto; display: block; padding: 20px 0;}
