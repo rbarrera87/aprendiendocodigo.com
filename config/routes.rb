@@ -1,4 +1,6 @@
 AprendiendocodigoCom::Application.routes.draw do
+  resources :courses
+
   root "welcome#index"
   get "welcome/index"
   get "welcome/under_construction"
