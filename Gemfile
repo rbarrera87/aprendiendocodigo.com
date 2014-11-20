@@ -44,7 +44,7 @@ group :development, :integration, :test do
   gem 'faker', '~> 1.4.2'
 end
 group :production do
-  gem 'pg'
+  #gem 'pg'
   gem 'rails_12factor'
 end
 
