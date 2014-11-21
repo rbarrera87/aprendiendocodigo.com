@@ -1,8 +1,10 @@
 AprendiendocodigoCom::Application.routes.draw do
+
   root "welcome#index"
   get "welcome/index"
   get "welcome/under_construction"
   resources :registers
+  resources :courses
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
