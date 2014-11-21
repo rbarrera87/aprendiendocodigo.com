@@ -1,7 +1,7 @@
 AprendiendocodigoCom::Application.routes.draw do
   devise_for :users
   root "welcome#index"
-  get "welcome/index"
+  match "/admin" => "admin#index", via: [:get]
   resources :registers
 
   # The priority is based upon order of creation: first created -> highest priority.
