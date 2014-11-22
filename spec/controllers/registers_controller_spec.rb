@@ -19,6 +19,10 @@ require 'rails_helper'
 # that an instance is receiving a specific message.
 
 RSpec.describe RegistersController, :type => :controller do
+  before (:each) do
+    @user = FactoryGirl.create :user
+    sign_in @user
+  end
 
   # This should return the minimal set of attributes required to create a valid
   # Register. As you add validations to Register, be sure to

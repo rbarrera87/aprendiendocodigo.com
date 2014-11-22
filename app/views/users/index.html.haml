@@ -1,0 +1,7 @@
+%h1 Users#index
+%p Find me in app/views/users/index.html.haml
+- if @users
+  - @users.each do |user|
+    = user.email
+- else
+  = "There's any user"

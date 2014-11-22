@@ -17,3 +17,4 @@
 config/*.yml
 .rspec
 .rvmrc
+chef/
