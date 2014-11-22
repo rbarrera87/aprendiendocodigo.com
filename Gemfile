@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2', '~> 0.3.16'
+gem 'rolify', '~> 3.4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 # Use Uglifier as compressor for JavaScript assets
