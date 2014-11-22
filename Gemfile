@@ -33,6 +33,7 @@ group :development, :integration, :test do
   gem 'rspec-rails', '~> 3.0.2'
   gem 'shoulda-matchers', require: false
   gem 'faker', '~> 1.4.2'
+  gem 'factory_girl_rails', '~> 4.5.0'
 end
 group :production do
   gem 'pg'
