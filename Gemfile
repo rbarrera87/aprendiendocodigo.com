@@ -36,7 +36,7 @@ group :development, :integration, :test do
   gem 'factory_girl_rails', '~> 4.5.0'
 end
 group :production do
-  gem 'pg'
+  #gem 'pg'
   gem 'rails_12factor'
 end
 
@@ -44,7 +44,7 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

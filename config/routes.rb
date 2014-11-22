@@ -3,6 +3,8 @@ AprendiendocodigoCom::Application.routes.draw do
   devise_for :users
   root "welcome#index"
   match "/admin" => "admin#index", via: [:get]
+  get "welcome/index"
+  get "welcome/under_construction"
   resources :registers
   resources :users
 
