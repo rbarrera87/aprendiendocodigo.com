@@ -1,4 +1,5 @@
 AprendiendocodigoCom::Application.routes.draw do
+  resources :courses
   resources :categories
   get "users/index"
   devise_for :users
