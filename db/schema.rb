@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124043138) do
+ActiveRecord::Schema.define(version: 20141124163814) do
 
   create_table "categories", force: true do |t|
     t.string   "name",        null: false
@@ -23,11 +23,13 @@ ActiveRecord::Schema.define(version: 20141124043138) do
   create_table "courses", force: true do |t|
     t.string   "name",        null: false
     t.string   "description"
-    t.integer  "category_id"
     t.string   "image_url",   null: false
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "courses", ["category_id"], name: "index_courses_on_category_id", using: :btree
 
   create_table "registers", force: true do |t|
     t.string   "name"
@@ -72,5 +74,17 @@ ActiveRecord::Schema.define(version: 20141124043138) do
   end
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id", using: :btree
+
+  create_table "videos", force: true do |t|
+    t.string   "name",        null: false
+    t.string   "description"
+    t.string   "slug",        null: false
+    t.string   "url",         null: false
+    t.integer  "course_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "videos", ["course_id"], name: "index_videos_on_course_id", using: :btree
 
 end
