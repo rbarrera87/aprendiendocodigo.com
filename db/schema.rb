@@ -21,9 +21,10 @@ ActiveRecord::Schema.define(version: 20141124043138) do
   end
 
   create_table "courses", force: true do |t|
-    t.string   "name"
+    t.string   "name",        null: false
     t.string   "description"
     t.integer  "category_id"
+    t.string   "image_url",   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
