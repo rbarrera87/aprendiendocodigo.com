@@ -1,6 +1,11 @@
 AprendiendocodigoCom::Application.routes.draw do
-  resources :courses
-  resources :categories
+  resources :videos
+  resources :courses do
+    resources :videos
+  end
+  resources :categories do
+    resources :courses
+  end
   get "users/index"
   devise_for :users
   root "welcome#index"
