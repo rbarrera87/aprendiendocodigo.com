@@ -15,22 +15,52 @@ RSpec.describe VideosController, :type => :controller do
     end
     describe "GET index" do
       it "returns http success" do
-        get :index
+        course = FactoryGirl.create :course
+        level = FactoryGirl.create :level
+        get :index, {level_id: level.id, course_id: course.id}
         expect(response).to be_success
       end
     end
 
     describe "GET new" do
       it "returns http success" do
-        get :new
+        course = FactoryGirl.create :course
+        level = FactoryGirl.create :level
+        get :new, {level_id: level.id, course_id: course.id}
         expect(response).to be_success
       end
     end
 
-    describe "GET create" do
-      it "returns http success" do
-        get :create
-        expect(response).to be_success
+    describe "POST create" do
+      describe "with valid params" do
+        it "creates a new video" do
+          expect {
+            post :create, {:video => valid_attributes}, valid_session
+          }.to change(Video, :count).by(1)
+        end
+
+        it "assigns a newly created video as @video" do
+          post :create, {:video => valid_attributes}, valid_session
+          expect(assigns(:video)).to be_a(Video)
+          expect(assigns(:video)).to be_persisted
+        end
+
+        it "redirects to the created video" do
+          post :create, {:video => valid_attributes}, valid_session
+          expect(response).to redirect_to(video.last)
+        end
+      end
+
+      describe "with invalid params" do
+        it "assigns a newly created but unsaved video as @video" do
+          post :create, {:video => invalid_attributes}, valid_session
+          expect(assigns(:video)).to be_a_new(Video)
+        end
+
+        it "re-renders the 'new' template" do
+          post :create, {:video => invalid_attributes}, valid_session
+          expect(response).to render_template("new")
+        end
       end
     end
 
