@@ -1,7 +1,8 @@
 AprendiendocodigoCom::Application.routes.draw do
-  resources :videos
   resources :courses do
-    resources :videos
+    resources :levels do
+      resources :videos
+    end
   end
   resources :categories do
     resources :courses
