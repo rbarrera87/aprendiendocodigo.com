@@ -1,7 +1,129 @@
 html, body {min-height:100%; background:#5A5B5D; margin: 0; padding: 0;}
 
+@font-face {
+	font-family: 'latobold';
+    src: url('lato-bold-webfont-webfont.eot');
+    src: url('lato-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-bold-webfont-webfont.woff2') format('woff2'),
+         url('lato-bold-webfont-webfont.woff') format('woff'),
+         url('lato-bold-webfont-webfont.ttf') format('truetype'),
+         url('lato-bold-webfont-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'latoitalic';
+    src: url('lato-italic-webfont-webfont.eot');
+    src: url('lato-italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-italic-webfont-webfont.woff2') format('woff2'),
+         url('lato-italic-webfont-webfont.woff') format('woff'),
+         url('lato-italic-webfont-webfont.ttf') format('truetype'),
+         url('lato-italic-webfont-webfont.svg#latoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('lato-black-webfont-webfont.eot');
+    src: url('lato-black-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-black-webfont-webfont.woff2') format('woff2'),
+         url('lato-black-webfont-webfont.woff') format('woff'),
+         url('lato-black-webfont-webfont.ttf') format('truetype'),
+         url('lato-black-webfont-webfont.svg#latoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'latobold_italic';
+    src: url('lato-bolditalic-webfont-webfont.eot');
+    src: url('lato-bolditalic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-bolditalic-webfont-webfont.woff2') format('woff2'),
+         url('lato-bolditalic-webfont-webfont.woff') format('woff'),
+         url('lato-bolditalic-webfont-webfont.ttf') format('truetype'),
+         url('lato-bolditalic-webfont-webfont.svg#latobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('lato-light-webfont-webfont.eot');
+    src: url('lato-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-light-webfont-webfont.woff2') format('woff2'),
+         url('lato-light-webfont-webfont.woff') format('woff'),
+         url('lato-light-webfont-webfont.ttf') format('truetype'),
+         url('lato-light-webfont-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato-regular-webfont-webfont.eot');
+    src: url('lato-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-regular-webfont-webfont.woff2') format('woff2'),
+         url('lato-regular-webfont-webfont.woff') format('woff'),
+         url('lato-regular-webfont-webfont.ttf') format('truetype'),
+         url('lato-regular-webfont-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
 #main{background:#F4F4F4; margin:0 auto; text-align: center; border-bottom:1px solid #fff;}
 #main img{max-width:95%; margin: 0 auto; display: block; padding: 45px 0;}
 #main_bottom{background:#5A5B5D repeat; padding: 40px 20px; margin: 0 auto; text-align: center;}
 #main_bottom p{color: #fff; font-size: 14px; line-height:24px; max-width: 840px; margin: 0 auto; padding:15px 0;}
 #main_bottom h2{color: #fff; font-size: 30px; text-transform: uppercase; line-height: 36px;}
+#main_bottom a{color: #20b5ee; transition: color 0.5s ease;}
+#main_bottom a:hover{color: #7edcff; transition: color 0.5s ease; text-decoration: none; background: none;}
+
+.navbar{height: auto; min-height: 95px; margin: 0; background: #fff; border-bottom:2px solid #20b5ee;}
+.navbar-brand{height: auto;}
+.navbar-nav {float: right; font-family:'latolight', 'Open Sans', Arial, sans-serif; text-transform: uppercase;}
+.navbar-inverse .navbar-nav > li > a{color: #5b5c5d; transition: color 0.5s ease;}
+.navbar-inverse .navbar-nav > li > a:hover{color: #20b5ee; transition: color 0.5s ease;}
+
+@media (min-width: 768px) {
+	.navbar-nav > li > a {padding-top: 40px;padding-bottom: 40px;}
+}
+
+.business-header {
+    height: 500px;
+    padding-top: 50px;
+    background: url('hero.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;}
+
+.tagline {
+	font-family:'latolight','Open Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size:50px;
+    color: #fff;
+    line-height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline;}
+
+p.homecta{margin-top: 50px;}
+p.homecta .btn{
+	background: #20b5ee; 
+	transition: background 0.5s ease; 
+	color:#fff; 
+	font-family: 'latobold', 'Open Sans', Arial, sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	border-radius: 0!important;}
+p.homecta .btn:hover{background: #2FC3F0; transition: background 0.5s ease; color:#fff;}
+
+.img-center {margin: 0 auto;}
+
+.container.homec{margin-top:40px;}
+.container.homec h2{
+    font-family:'latolight','Open Sans', Arial, sans-serif; 
+    font-size:60px; 
+    line-height: 65px;
+    color:#5b5c5d; 
+    text-align: center;}
+.container.homec .row{margin-top: 30px; margin-bottom: 30px}
+
+footer {
+    margin: 50px 0;
+}

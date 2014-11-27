@@ -1,0 +1,100 @@
+%nav.navbar.navbar-inverse.navbar-static-top{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#"}
+        %img{alt: "Logo", src: asset_path("logo.png")}
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{:href => "#"} Courses
+        %li
+          %a{:href => "#"} About
+        %li
+          %a{:href => "#"} FAQ
+        %li
+          %a{:href => "#"} Contact
+    / /navbar-collapse
+  / /container
+
+%header.business-header
+  .container
+    .row
+      .col-lg-12
+        %h1.tagline
+          Aprende a codificar en 
+          %br
+          cualquier lugar y en 
+          %br
+          su propio paso
+        %p.homecta
+          %a.btn.btn-lg{:href => "#"} Únete ahora
+/ Page Content
+.container.homec
+  %h2 Areas to explore
+  .row 
+    %ul.ch-grid
+      .col-sm-3
+        %li
+          .ch-item.ch-img-1
+            .ch-info
+              %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              %p
+                Get started with
+                %a{:href => "#"} RUBY
+      .col-sm-3
+        %li
+          .ch-item.ch-img-2
+            .ch-info
+              %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              %p
+                Get started with
+                %a{:href => "#"} RAILS
+      .col-sm-3
+        %li
+          .ch-item.ch-img-3
+            .ch-info
+              %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              %p
+                Get started with
+                %a{:href => "#"} JS
+      .col-sm-3
+        %li
+          .ch-item.ch-img-4
+            .ch-info
+              %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              %p
+                Get started with
+                %a{:href => "#"} GIT
+
+  .row
+    .col-sm-8
+      %h3 What We Do
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.
+    .col-sm-4
+      %h3 Contact Us
+      %address
+        %strong AC
+        = succeed "3481" do
+          %br/
+        = succeed "Beverly" do
+          %br/
+        %br/
+      %address
+        %abbr{:title => "Phone"}> P:
+        (123) 456-7890
+        %br/
+        %abbr{:title => "Email"} E:
+        %a{:href => "mailto:#"} name@example.com
+
+
+  / Footer
+  %footer
+    .row
+      .col-lg-12
+        %p Copyright ©
+    / /row

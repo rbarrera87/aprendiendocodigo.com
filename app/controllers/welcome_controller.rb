@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
   def under_construction
   end
 
+  def index_new
+  end
+
 end
