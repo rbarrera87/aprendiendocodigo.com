@@ -24,7 +24,7 @@
 %header.business-header
   .container
     .row
-      .col-lg-12
+      .col-lg-12.slide-left
         %h1.tagline
           Aprende a codificar en 
           %br
@@ -36,7 +36,7 @@
 / Page Content
 .container.homec
   %h2 Areas to explore
-  .row 
+  .row.slide-top
     %ul.ch-grid
       .col-sm-3
         %li
@@ -98,3 +98,9 @@
       .col-lg-12
         %p Copyright ©
     / /row
+
+:javascript
+
+  $(document).ready(function() {
+  $(window).fadeThis({speed: 800});
+  });
