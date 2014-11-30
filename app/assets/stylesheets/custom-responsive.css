@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  ul.ch-grid .col-sm-3{width: 50%; padding:20px 0;}
+}
+
+@media screen and (max-width: 769px){
+  ul.ch-grid .col-sm-3{padding:10px 0;}
+}
+
+@media screen and (max-width: 991px){
+  .detab .tab-content{padding-top: 30px;}
+  footer .bluefoot h4{margin: 30px 0 10px!important; padding-top: 0;}
+  footer .bluefoot{background-color: transparent!important; color: #5b5c5d!important; clear: both; padding-top: 20px;}
+  footer .bluefoot ul{padding:0!important;}
+  footer .bluefoot li{border-color:rgba(0, 0, 0, 0.3)!important;}
+  footer .bluefoot ul li a{color:#2FC3F0!important; transition: color 0.5s ease;}
+  footer .bluefoot ul li a:hover{color:#00A0DB!important; transition: color 0.5s ease; text-decoration: none; background-color: transparent;}
+}
+
+@media screen and (max-width: 991px) and (min-width: 501px){
+  .detab img{max-width: 50%;}
+}
+
+@media screen and (max-width: 500px){
+  .detab img{width: 100%; display: block; float: none;}
+  .tagline {font-size: 40px!important; line-height: 50px!important;}
+}
+
+@media screen and (max-width: 480px){
+  body, html {text-align: center!important;}
+  footer img{display: block; float: none!important; margin:0 auto!important;}
+}
+
+@media screen and (max-width: 350px){
+  .navbar-brand img{max-width: 225px; float: left;}
+}
