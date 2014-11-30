@@ -1,0 +1,24 @@
+.supermain.login
+  .container
+    %img{alt: "Logo", src: asset_path("login_logo.png")}
+  .login-logo.container
+    %h2 Log in
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field{:placeholder => "First name"}
+        /
+          = f.label :email
+        %br/
+        = f.email_field :email, autofocus: false, placeholder:"Email"
+      .field
+        /
+          = f.label :password
+        %br/
+        = f.password_field :password, autocomplete: "off", placeholder:"Password"
+      - if devise_mapping.rememberable?
+        .field
+          .col-md-8
+            = f.check_box :remember_me
+            = f.label :remember_me
+      .actions
+        = f.submit "Log in"
+    = render "devise/shared/links"
