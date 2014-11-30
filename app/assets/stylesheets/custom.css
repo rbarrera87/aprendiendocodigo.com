@@ -74,7 +74,7 @@ html, body {min-height:100%; background:#5A5B5D; margin: 0; padding: 0;}
 body p, body ol, body ul, body td{
     font-size:15px; 
     line-height: 24px; 
-    font-family:'latolight', 'Open Sans', Verdana, sans-serif;
+    font-family:'latoregular', 'Open Sans', Verdana, sans-serif;
     padding-bottom: 10px;
     padding-top: 10px}
 
@@ -96,16 +96,17 @@ h4{font-family:'latobolds', 'Open Sans', Verdana, sans-serif;}
 #main_bottom a{color: #20b5ee; transition: color 0.5s ease;}
 #main_bottom a:hover{color: #7edcff; transition: color 0.5s ease; text-decoration: none; background: none;}
 
-.navbar{height: auto; min-height: 95px; margin: 0; background: #fff; border-bottom:2px solid #20b5ee;}
+.navbar{height: auto; min-height: 90px; margin: 0; background: #fff; border-bottom:2px solid #20b5ee;}
 .navbar-brand{height: auto;}
 .navbar-nav {float: right; font-family:'latolight', 'Open Sans', Verdana, sans-serif; text-transform: uppercase;}
 .navbar-inverse .navbar-nav > li > a{color: #5b5c5d; transition: color 0.5s ease;}
 .navbar-inverse .navbar-nav > li > a:hover{color: #20b5ee; transition: color 0.5s ease;}
+.nav-pills > li > a:hover{background-color: #4A4B4C;}
 
 .supermain{padding-top: 30px;}
 
 @media (min-width: 768px) {
-	.navbar-nav > li > a {padding-top: 40px;padding-bottom: 40px;}
+	.navbar-nav > li > a {padding-top: 30px;padding-bottom: 30px;}
 }
 
 .business-header {

@@ -91,7 +91,7 @@
 	margin: 0 30px;
 	padding: 45px 0 0 0;
 	height: 155px;
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'latoregular', Verdana, Arial, sans-serif;
 }
 
 .ch-info p {
@@ -117,8 +117,8 @@
 	text-transform: uppercase;
 	font-size: 28px;
 	letter-spacing: 1px;
-	padding-top: 6px;
-	font-family: 'Open Sans', Arial, sans-serif;
+	padding-top: 1px;
+	font-family: 'latobold', Verdana, Arial, sans-serif;
 }
 
 .ch-info p a:hover {
