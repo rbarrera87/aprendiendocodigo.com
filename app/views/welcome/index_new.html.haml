@@ -1,0 +1,184 @@
+%nav.navbar.navbar-inverse.navbar-static-top{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#"}
+        %img{alt: "Logo", src: asset_path("logo.png")}
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{:href => "#"} Courses
+        %li
+          %a{:href => "#"} About
+        %li
+          %a{:href => "#"} FAQ
+        %li
+          %a{:href => "#"} Contact
+    / /navbar-collapse
+  / /container
+
+%header.business-header
+  .container
+    .row
+      .col-lg-12.slide-left
+        %h1.tagline
+          Aprende a codificar en 
+          %br
+          cualquier lugar y en 
+          %br
+          su propio paso
+        %p.homecta
+          %a.btn.btn-lg{:href => "#"} Únete ahora
+/ Page Content
+.supermain
+  .container.homec
+    %h2 Areas to explore
+    .row
+      %ul.ch-grid
+        .col-sm-3
+          %li
+            .ch-item.ch-img-1
+              .ch-info
+                %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                %p
+                  Get started with
+                  %a{:href => "#"} RUBY
+        .col-sm-3
+          %li
+            .ch-item.ch-img-2
+              .ch-info
+                %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                %p
+                  Get started with
+                  %a{:href => "#"} RAILS
+        .col-sm-3
+          %li
+            .ch-item.ch-img-3
+              .ch-info
+                %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                %p
+                  Get started with
+                  %a{:href => "#"} JS
+        .col-sm-3
+          %li
+            .ch-item.ch-img-4
+              .ch-info
+                %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                %p
+                  Get started with
+                  %a{:href => "#"} GIT
+
+  .row.detab
+    .container.homec
+      %h2.tabh The things you will learn!
+      %div{:role => "tabpanel"}
+        .col-md-2
+          %ul.nav.nav-pills.nav-stacked{:role => "tablist"}
+            %li.active{:role => "presentation"}
+              %a{"aria-controls" => "ruby", "data-toggle" => "tab", :href => "#ruby", :role => "tab"} Ruby
+            %li{:role => "presentation"}
+              %a{"aria-controls" => "rails", "data-toggle" => "tab", :href => "#rails", :role => "tab"} Rails
+            %li{:role => "presentation"}
+              %a{"aria-controls" => "js", "data-toggle" => "tab", :href => "#js", :role => "tab"} Javascript
+            %li{:role => "presentation"}
+              %a{"aria-controls" => "git", "data-toggle" => "tab", :href => "#git", :role => "tab"} Git
+      .col-md-10
+        .tab-content
+          #ruby.tab-pane.active{:role => "tabpanel", :class => "tab-pane fade in active"}
+            %img.fr{alt: "mac", src: asset_path("mac.png")}
+            %h3
+              Learn Ruby because its cool
+            %p
+              Curabitur fermentum est quis nisl malesuada, tristique tempor nibh congue. Sed magna ante, iaculis quis diam ac, volutpat dictum turpis. Morbi tempus, orci a vestibulum posuere, justo lectus dictum dolor, ac eleifend nisi leo tincidunt velit. Praesent pretium est id maximus lacinia.
+          #rails.tab-pane{:role => "tabpanel", :class => "tab-pane fade"}
+            %img.fr{alt: "mac", src: asset_path("mac.png")}
+            %h3
+              Learn Rails because Ruby will be useless without it
+            %p
+              Suspendisse augue metus, pretium ut ligula congue, tempor sodales enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas porta quam a sem dapibus, vel bibendum sem efficitur. 
+          #js.tab-pane{:role => "tabpanel", :class => "tab-pane fade"}
+            %img.fr{alt: "mac", src: asset_path("mac.png")}
+            %h3
+              Learn Javascript to do pointless animations
+            %p
+              Curabitur fermentum est quis nisl malesuada, tristique tempor nibh congue. Sed magna ante, iaculis quis diam ac, volutpat dictum turpis. Morbi tempus, orci a vestibulum posuere, justo lectus dictum dolor, ac eleifend nisi leo tincidunt velit. Praesent pretium est id maximus lacinia.
+          #git.tab-pane{:role => "tabpanel", :class => "tab-pane fade"}
+            %img.fr{alt: "mac", src: asset_path("mac.png")}
+            %h3
+              Learn Git to commit things to other things
+            %p
+              Suspendisse augue metus, pretium ut ligula congue, tempor sodales enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas porta quam a sem dapibus, vel bibendum sem efficitur. 
+  .container.homec
+    .row
+      .col-sm-5
+        %h3 Here's why this is a good idea
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.
+      .col-sm-5
+        %h3 Here's some other shit
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.
+      .col-sm-2
+        %h3 Contact Us
+        %address
+          %strong AC
+          = succeed "3481" do
+            %br/
+          = succeed "Beverly" do
+            %br/
+          %br/
+        %address
+          %abbr{:title => "Phone"}> P:
+          (123) 456-7890
+          %br/
+          %abbr{:title => "Email"} E:
+          %a{:href => "mailto:#"} name@example.com
+
+
+    / Footer
+  %footer
+    .container
+      .col-md-8
+        %h4 Subscribe
+        %p
+          Want to get 
+          %a{:href => "#"} more stuff 
+          like this?
+        %p
+          Subscribe to our newsletter for news and updates to stay tuned on new courses.
+        %a{:href => "#"}
+          %img{alt: "Facebook", src: asset_path("fb.png")}
+        %a{:href => "#"}
+          %img{alt: "Twitter", src: asset_path("tw.png")}
+        %a{:href => "#"}
+          %img{alt: "Github", src: asset_path("gh.png")}
+        %a{:href => "#"}
+          %img{alt: "Share", src: asset_path("share.png")}
+      .col-md-4.bluefoot
+        %h4 Learn with us!
+        %ul
+          %li
+            %a{:href => "#"} Courses
+          %li
+            %a{:href => "#"} About
+          %li
+            %a{:href => "#"} FAQ
+          %li
+            %a{:href => "#"} Contact
+          %li
+            %a{:href => "#"} Something
+
+    / /row
+
+:javascript
+
+  $(document).ready(function() {
+  $(window).fadeThis({speed: 800});
+  });
+
+  $('#myTab a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })

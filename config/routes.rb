@@ -13,6 +13,7 @@ AprendiendocodigoCom::Application.routes.draw do
   match "/admin" => "admin#index", via: [:get]
   get "welcome/index"
   get "welcome/under_construction"
+  get "welcome/index_new"
   resources :registers
   resources :users
 
