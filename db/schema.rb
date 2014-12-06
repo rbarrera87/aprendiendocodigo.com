@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141126051212) do
+ActiveRecord::Schema.define(version: 20141204030402) do
+
+  create_table "answers", force: true do |t|
+    t.string   "answer",                      null: false
+    t.boolean  "is_correct",  default: false
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "answers", ["question_id"], name: "index_answers_on_question_id", using: :btree
 
   create_table "categories", force: true do |t|
     t.string   "name",        null: false
@@ -19,6 +29,17 @@ ActiveRecord::Schema.define(version: 20141126051212) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "challengues", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "answer_code"
+    t.integer  "level_id"
+  end
+
+  add_index "challengues", ["level_id"], name: "index_challengues_on_level_id", using: :btree
 
   create_table "courses", force: true do |t|
     t.string   "name",        null: false
@@ -39,6 +60,24 @@ ActiveRecord::Schema.define(version: 20141126051212) do
   end
 
   add_index "levels", ["course_id"], name: "index_levels_on_course_id", using: :btree
+
+  create_table "questions", force: true do |t|
+    t.string   "question",   null: false
+    t.integer  "quiz_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "questions", ["quiz_id"], name: "index_questions_on_quiz_id", using: :btree
+
+  create_table "quizzes", force: true do |t|
+    t.string   "name",       null: false
+    t.integer  "level_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "quizzes", ["level_id"], name: "index_quizzes_on_level_id", using: :btree
 
   create_table "registers", force: true do |t|
     t.string   "name"
