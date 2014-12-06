@@ -1,8 +1,7 @@
 FactoryGirl.define do
   factory :question do
-    question "MyString"
-answer nil
-quiz nil
+    question Faker::Lorem.word
+    quiz { FactoryGirl.create :quiz }
   end
 
 end

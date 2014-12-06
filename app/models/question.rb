@@ -4,8 +4,8 @@ class Question < ActiveRecord::Base
 
   validates :question, :quiz, presence: true
 
-  def correct_answer
-    answers.where(answers: { is_correct: true }).first
+  def correct_answers
+    answers.where(answers: { is_correct: true })
   end
 
 end

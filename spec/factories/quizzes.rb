@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :quiz do
-    name "MyString"
-level nil
+    name Faker::Lorem.word
+    level { FactoryGirl.create :level }
   end
 
 end
