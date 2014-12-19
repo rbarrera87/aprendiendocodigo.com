@@ -1,66 +1,66 @@
 @font-face {
 	font-family: 'latobold';
-    src: url(<%= asset_path('lato-bold-webfont-webfont.eot') %>);
-    src: url(<%= asset_path('lato-bold-webfont-webfont.eot?#iefix') %>) format('embedded-opentype'),
-         url(<%= asset_path('lato-bold-webfont-webfont.woff2') %>) format('woff2'),
-         url(<%= asset_path('lato-bold-webfont-webfont.woff') %>) format('woff'),
-         url(<%= asset_path('lato-bold-webfont-webfont.ttf') %>) format('truetype'),
-         url(<%= asset_path('lato-bold-webfont-webfont.svg#latobold') %>) format('svg');
+    src: url('lato-bold-webfont-webfont.eot');
+    src: url('lato-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-bold-webfont-webfont.woff2') format('woff2'),
+         url('lato-bold-webfont-webfont.woff') format('woff'),
+         url('lato-bold-webfont-webfont.ttf') format('truetype'),
+         url('lato-bold-webfont-webfont.svg#latobold') format('svg');
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
     font-family: 'latoitalic';
-    src: url(<%= asset_path('lato-italic-webfont-webfont.eot') %>);
-    src: url(<%= asset_path('lato-italic-webfont-webfont.eot?#iefix') %>) format('embedded-opentype'),
-         url(<%= asset_path('lato-italic-webfont-webfont.woff2') %>) format('woff2'),
-         url(<%= asset_path('lato-italic-webfont-webfont.woff') %>) format('woff'),
-         url(<%= asset_path('lato-italic-webfont-webfont.ttf') %>) format('truetype'),
-         url(<%= asset_path('lato-italic-webfont-webfont.svg#latoitalic') %>) format('svg');
+    src: url('lato-italic-webfont-webfont.eot');
+    src: url('lato-italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-italic-webfont-webfont.woff2') format('woff2'),
+         url('lato-italic-webfont-webfont.woff') format('woff'),
+         url('lato-italic-webfont-webfont.ttf') format('truetype'),
+         url('lato-italic-webfont-webfont.svg#latoitalic') format('svg');
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
     font-family: 'latoblack';
-    src: url(<%= asset_path('lato-black-webfont-webfont.eot') %>);
-    src: url(<%= asset_path('lato-black-webfont-webfont.eot?#iefix') %>) format('embedded-opentype'),
-         url(<%= asset_path('lato-black-webfont-webfont.woff2') %>) format('woff2'),
-         url(<%= asset_path('lato-black-webfont-webfont.woff') %>) format('woff'),
-         url(<%= asset_path('lato-black-webfont-webfont.ttf') %>) format('truetype'),
-         url(<%= asset_path('lato-black-webfont-webfont.svg#latoblack') %>) format('svg');
+    src: url('lato-black-webfont-webfont.eot');
+    src: url('lato-black-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-black-webfont-webfont.woff2') format('woff2'),
+         url('lato-black-webfont-webfont.woff') format('woff'),
+         url('lato-black-webfont-webfont.ttf') format('truetype'),
+         url('lato-black-webfont-webfont.svg#latoblack') format('svg');
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
     font-family: 'latobold_italic';
-    src: url(<%= asset_path('lato-bolditalic-webfont-webfont.eot') %>);
-    src: url(<%= asset_path('lato-bolditalic-webfont-webfont.eot?#iefix') %>) format('embedded-opentype'),
-         url(<%= asset_path('lato-bolditalic-webfont-webfont.woff2') %>) format('woff2'),
-         url(<%= asset_path('lato-bolditalic-webfont-webfont.woff') %>) format('woff'),
-         url(<%= asset_path('lato-bolditalic-webfont-webfont.ttf') %>) format('truetype'),
-         url(<%= asset_path('lato-bolditalic-webfont-webfont.svg#latobold_italic') %>) format('svg');
+    src: url('lato-bolditalic-webfont-webfont.eot');
+    src: url('lato-bolditalic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-bolditalic-webfont-webfont.woff2') format('woff2'),
+         url('lato-bolditalic-webfont-webfont.woff') format('woff'),
+         url('lato-bolditalic-webfont-webfont.ttf') format('truetype'),
+         url('lato-bolditalic-webfont-webfont.svg#latobold_italic') format('svg');
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
     font-family: 'latolight';
-    src: url(<%= asset_path('lato-light-webfont-webfont.eot') %>);
-    src: url(<%= asset_path('lato-light-webfont-webfont.eot?#iefix') %>) format('embedded-opentype'),
-         url(<%= asset_path('lato-light-webfont-webfont.woff2') %>) format('woff2'),
-         url(<%= asset_path('lato-light-webfont-webfont.woff') %>) format('woff'),
-         url(<%= asset_path('lato-light-webfont-webfont.ttf') %>) format('truetype'),
-         url(<%= asset_path('lato-light-webfont-webfont.svg#latolight') %>) format('svg');
+    src: url('lato-light-webfont-webfont.eot');
+    src: url('lato-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-light-webfont-webfont.woff2') format('woff2'),
+         url('lato-light-webfont-webfont.woff') format('woff'),
+         url('lato-light-webfont-webfont.ttf') format('truetype'),
+         url('lato-light-webfont-webfont.svg#latolight') format('svg');
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
     font-family: 'latoregular';
-    src: url(<%= asset_path('lato-regular-webfont-webfont.eot') %>);
-    src: url(<%= asset_path('lato-regular-webfont-webfont.eot?#iefix') %>) format('embedded-opentype'),
-         url(<%= asset_path('lato-regular-webfont-webfont.woff2') %>) format('woff2'),
-         url(<%= asset_path('lato-regular-webfont-webfont.woff') %>) format('woff'),
-         url(<%= asset_path('lato-regular-webfont-webfont.ttf') %>) format('truetype'),
-         url(<%= asset_path('lato-regular-webfont-webfont.svg#latoregular') %>) format('svg');
+    src: url('lato-regular-webfont-webfont.eot');
+    src: url('lato-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-regular-webfont-webfont.woff2') format('woff2'),
+         url('lato-regular-webfont-webfont.woff') format('woff'),
+         url('lato-regular-webfont-webfont.ttf') format('truetype'),
+         url('lato-regular-webfont-webfont.svg#latoregular') format('svg');
     font-weight: normal;
     font-style: normal;}
 
@@ -72,8 +72,8 @@ html, body {min-height:100%; background:#f2f2f2; margin: 0; padding: 0;}
 .cl{clear: both}
 
 body p, body ol, body ul, body td{
-    font-size:15px;
-    line-height: 24px;
+    font-size:15px; 
+    line-height: 24px; 
     font-family:'latoregular', 'Open Sans', Verdana, sans-serif;
     padding-bottom: 10px;
     padding-top: 10px}
@@ -112,7 +112,7 @@ h4{font-family:'latobolds', 'Open Sans', Verdana, sans-serif;}
 .business-header {
     height: 500px;
     padding-top: 50px;
-    background: url(<%= asset_path('hero.jpg') %>) center center no-repeat scroll;
+    background: url('hero.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -129,9 +129,9 @@ h4{font-family:'latobolds', 'Open Sans', Verdana, sans-serif;}
 
 p.homecta{margin-top: 50px;}
 p.homecta .btn{
-	background: #20b5ee;
-	transition: background 0.5s ease;
-	color:#fff;
+	background: #20b5ee; 
+	transition: background 0.5s ease; 
+	color:#fff; 
 	font-family: 'latobold', 'Open Sans', Verdana, sans-serif;
 	font-size: 24px;
 	text-transform: uppercase;
@@ -142,10 +142,10 @@ p.homecta .btn:hover{background: #2FC3F0; transition: background 0.5s ease; colo
 
 .container.homec{margin-top:40px;}
 .container.homec h2{
-    font-family:'latolight','Open Sans', Verdana, sans-serif;
-    font-size:60px;
+    font-family:'latolight','Open Sans', Verdana, sans-serif; 
+    font-size:60px; 
     line-height: 65px;
-    color:#333;
+    color:#333; 
     text-align: center;
     margin-top: 20px;}
 h2.tabh{padding-bottom: 60px;}
@@ -174,17 +174,17 @@ footer img{padding:20px 10px 10px; float: left;}
 footer .bluefoot{background-color: #20b5ee; color: #fff;}
 footer .bluefoot ul{padding: 10px 30px; clear: both;}
 footer .bluefoot li{
-    list-style: none;
+    list-style: none; 
     padding: 8px;
-    border-bottom: 1px solid;
-    border-color:rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid; 
+    border-color:rgba(255, 255, 255, 0.5); 
     font-size: 13px;}
 footer .bluefoot li a{color: #fff; color: rgba(255, 255, 255, 1.0)!important; transition: color 0.5s ease;}
 footer .bluefoot li a:hover{
-    text-decoration: none;
-    background-color: transparent;
-    color: #fff;
-    color: rgba(255, 255, 255, 0.7)!important;
+    text-decoration: none; 
+    background-color: transparent; 
+    color: #fff; 
+    color: rgba(255, 255, 255, 0.7)!important; 
     transition: color 0.5s ease;}
 footer .bluefoot li:last-child{border: none;}
 footer .bluefoot h4 {margin: 40px 30px 10px; font-weight:bold; clear: both;}
