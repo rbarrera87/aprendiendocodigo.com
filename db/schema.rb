@@ -30,6 +30,17 @@ ActiveRecord::Schema.define(version: 20141204030402) do
     t.datetime "updated_at"
   end
 
+  create_table "challengues", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "answer_code"
+    t.integer  "level_id"
+  end
+
+  add_index "challengues", ["level_id"], name: "index_challengues_on_level_id", using: :btree
+
   create_table "courses", force: true do |t|
     t.string   "name",        null: false
     t.string   "description"
