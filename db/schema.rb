@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150205031404) do
+ActiveRecord::Schema.define(version: 20150215222921) do
 
   create_table "answers", force: true do |t|
     t.string   "answer",                      null: false
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20150205031404) do
     t.datetime "updated_at"
     t.integer  "level_id"
     t.integer  "levels_completed"
+    t.boolean  "available",        default: true
   end
 
   add_index "dashboards", ["course_id"], name: "index_dashboards_on_course_id", using: :btree
