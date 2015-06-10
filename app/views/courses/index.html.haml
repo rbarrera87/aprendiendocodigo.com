@@ -1,2 +1,6 @@
 %h1 Courses#index
 %p Find me in app/views/courses/index.html.haml
+%ul
+- @courses.each do |course|
+  %li
+    = course.name

@@ -1,7 +1,7 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-  load_and_authorize_resource
+
   skip_authorize_resource only: [:index, :show]
 
   def index
@@ -53,10 +53,10 @@ class CoursesController < ApplicationController
 
   private
   def set_course
-    @course = Course.find(params[:id])
+    @course = Course.friendly.find(params[:id])
   end
 
   def course_params
-      params.require(:course).permit(:name)
-    end
+    params.require(:course).permit(:name)
+  end
 end
