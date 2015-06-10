@@ -18,3 +18,4 @@ config/*.yml
 .rspec
 .rvmrc
 chef/
+*.DS_Store
