@@ -1,26 +1,3 @@
-%nav.navbar.navbar-inverse.navbar-static-top{:role => "navigation"}
-  .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "#"}
-        %img{alt: "Logo", src: asset_path("logo.png")}
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li
-          %a{:href => "#"} Cursos
-        %li
-          %a{:href => "#"} Acerca de
-        %li
-          %a{:href => "#"} FAQ
-        %li
-          %a{:href => "#"} Contacto
-    / /navbar-collapse
-  / /container
-
 %header.business-header
   .container
     .row
@@ -135,48 +112,3 @@
           %br/
           %abbr{:title => "Email"} E:
           %a{:href => "mailto:#"} name@example.com
-
-
-    / Footer
-  %footer
-    .container
-      .col-md-8
-        %h4 Subscribe
-        %p
-          Want to get
-          %a{:href => "#"} more stuff
-          like this?
-        %p
-          Subscribe to our newsletter for news and updates to stay tuned on new courses.
-        %a{:href => "#"}
-          %img{alt: "Facebook", src: asset_path("fb.png")}
-        %a{:href => "#"}
-          %img{alt: "Twitter", src: asset_path("tw.png")}
-        %a{:href => "#"}
-          %img{alt: "Github", src: asset_path("gh.png")}
-        %a{:href => "#"}
-          %img{alt: "Share", src: asset_path("share.png")}
-      .col-md-4.bluefoot
-        %h4 Learn with us!
-        %ul
-          %li
-            %a{:href => "#"} Cursos
-          %li
-            %a{:href => "#"} Acerca de
-          %li
-            %a{:href => "#"} FAQ
-          %li
-            %a{:href => "#"} Contacto
-
-    / /row
-
-:javascript
-
-  $(document).ready(function() {
-  $(window).fadeThis({speed: 800});
-  });
-
-  $('#myTab a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-  })

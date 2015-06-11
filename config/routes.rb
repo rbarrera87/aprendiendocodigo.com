@@ -7,15 +7,13 @@ AprendiendocodigoCom::Application.routes.draw do
   resources :categories do
     resources :courses
   end
-  get "users/index"
-  devise_for :users
+  devise_for :users, controllers: { sessions:"sessions", registrations: "registrations"}
   root "welcome#index"
   match "/admin" => "admin#index", via: [:get]
   get "welcome/index"
   get "welcome/under_construction"
   get "welcome/index_new"
   resources :registers
-  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
