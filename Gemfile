@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'yt', git:  'https://github.com/rbarrera87/yt.git'
-gem 'awesome_print', '~> 1.2.0'
+gem 'awesome_print', '~> 1.6.1'
 gem 'bootstrap-sass', '~> 3.2.0.1'
 gem 'cancan', '~> 1.6.10'
 gem 'coffee-rails', '~> 4.0.0'
